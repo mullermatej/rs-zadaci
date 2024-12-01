@@ -11,6 +11,6 @@ async def dohvati_proizvode(request):
     return web.json_response(proizvodi)
 
 
-app.router.add_get("/", dohvati_proizvode)
+app.router.add_get("/proizvodi", dohvati_proizvode)
 
 web.run_app(app, host="localhost", port=8081)
